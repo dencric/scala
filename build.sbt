@@ -1,4 +1,6 @@
-lazy val root = (project in file(".")).
+excludeFilter in unmanagedSources := HiddenFileFilter || "*zepellin*" 
+
+val root = (project in file(".")).
   settings(
     name := "hello",
     version := "1.0",
